@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			background-image: url("wallp2.jpg");
+			background-size: 1920px,1080px;
+			background-repeat: no-repeat;
+
+
+		}
+		.format{
+			font-size: 150px;
+			color: #FFD700;
+			margin-left: 450px;
+			margin-top: 200px;
+
+		}
+		article{
+			margin-top: 50px;
+			color: #FFD700;
+			margin-left: 12px;
+		}
+		table,td{
+            border: 1px  solid #FFD700;
+            height: 25px;
+
+
+		}
+		th{
+			height: 50px;
+		}
+
+
+	</style>
+	<title>skils</title>
+	
+</head>
+<body>
+
+
+     <article>
+       <table border="1">	
+        
+       <tr>              <!-- <tr>this code pice  refers to header-->
+     	<th><label for="vol">LÓGICA DE PROGRAMAÇÃO</label></th>
+     	 <th><label for="vol">LINGUAGENS DE PROGRMAÇÃO</label></th>
+     	  <th><label for="vol">NÍVEL DO INGLÊS</label></th>
+           <th><label for="vol">ATUALIZAÇÃO E ESTUDOS</label></th>
+            <th><label for="vol">COMUNICAÇÃO</label></th>
+             <th><label for="vol">RESOLUÇÃO DE PROBLEMAS</label></th>
+       </tr>
+        <!--<td>this part refers to that contains file -->
+        <td><input type="range" id="vol1" value="0" name="vol" min="0" max="50"><p id="box1"></p></td>
+         <td><input type="range" id="vol2" value="0" name="vol" min="0" max="50"><p id="box2"></p></td></td>
+          <td><input type="range" id="vol3" value="0" name="vol" min="0" max="50"><p id="box3"></td>
+           <td><input type="range" id="vol4" value="0" name="vol" min="0" max="50"><p id="box4"></td>
+            <td><input type="range" id="vol5" value="0" name="vol" min="0" max="50"><p id="box5"></td>
+             <td><input type="range" id="vol6" value="0" name="vol" min="0" max="50"><p id="box6"></td>
+        
+        </table>
+
+     </article>
+  
+  
+
+
+ <p class="format">SKILS  <input id="btn1" type="submit" onclick="function_name()"></p>
+
+
+   <script type="text/javascript">
+     	function function_name() {
+     		 var a = document.getElementById("vol1").value;
+  document.getElementById("box1").innerHTML = a;
+
+  var b = document.getElementById("vol2").value;
+  document.getElementById("box2").innerHTML = b;
+
+  var c= document.getElementById("vol3").value;
+  document.getElementById("box3").innerHTML = c;
+
+  var d = document.getElementById("vol4").value;
+  document.getElementById("box4").innerHTML = d;
+
+  var e = document.getElementById("vol5").value;
+  document.getElementById("box5").innerHTML =e;
+
+  var f =document.getElementById("vol6").value;
+  document.getElementById("box6").innerHTML =f;
+
+     	}
+    
+     </script>
+   
+
+</body>
+</html>
